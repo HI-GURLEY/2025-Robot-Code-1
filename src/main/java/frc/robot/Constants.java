@@ -47,8 +47,8 @@ public final class Constants {
     public static final double stickDeadband = 0.1;
 
     public static final class vision {
-        public static final AprilTagFieldLayout kTagLayout = AprilTagFields.kDefaultField.loadAprilTagLayoutField();
-
+        public static final AprilTagFieldLayout kTagLayout = AprilTagFieldLayout.loadField(AprilTagFields.kDefaultField);
+        
         public static final String localizationCameraOneName = "limelight-camera";
         public static final Transform3d localizationCameraOneToRobot = new Transform3d(
                 new Translation3d(
